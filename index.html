@@ -34,29 +34,43 @@
 
 		<div class="container">
 
+			
 			<div class="row">
 				<div class="col align-self-center">
-					<div class="form-group">
-						<label for="txtAreaLbl">Entrez votre texte ci-dessous</label>
-						<textarea class="form-control" id="txtAreaLbl" rows="20"></textarea>
-						<span id=charcount></span>
+
+						<form>
+								<div class="form-group p-2">
+									
+									<div class="">
+										<label for="txtAreaLbl">Entrez votre texte ci-dessous</label>
+										<textarea id="txtAreaId" class="form-control" id="txtAreaLbl" rows="20" placeholder="Ecrivez votre texte..."></textarea>
+									</div>
+									
+									<div class="text-right">
+										<span id="charcount">0 caractère sur 500</span>
+									</div>
+									
+									<div class="col mx-auto text-center">
+										<input id="iptValider" class="m-2 btn btn-primary" type="submit" value="Repeat">
+										<input id="iptNettoyer" class=" m-2 btn btn-primary" type="reset" value="Clean">
+									</div>
+									
+									<div class="align-items-center">
+										<label for="inputLength">How long ?</label>
+										<input type="number" min="0" max="500" id="countId" class="form-control mx-sm-3" aria-describedby="lengthHelpInline" placeholder="Taille(0-500)">
+										<span id="lengthHelpInline" class="text-muted" style="float : right;">Attention à ne pas surcharger la mémoire.</span>
+									</div>
+
+									<div class="align-items-center">
+										<button id="iptCopier" type="submit" class="btn btn-primary">Copier</button>
+										<button id="iptColler" type="button" class="btn btn-primary">Coller</button>
+									</div>
+
+								</div>
+						</form>
+
 					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col">
-					<form class="form-inline">
-						<div class="form-group">
-						  <label for="inputLength">How long ?</label>
-						  <input type="number" min="0" max="500" id="inputLength" class="form-control mx-sm-3" aria-describedby="lengthHelpInline">
-						  <small id="lengthHelpInline" class="text-muted">Attention à ne pas surcharger la mémoire.</small>
-						</div>
-					  </form>
-					<div class="align-items-center">
-						<input id="iptValider" class="btn btn-primary" type="submit" value="Repeat">
-					</div>
-				</div>
-			</div>
 
 		</div>
 
