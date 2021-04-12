@@ -11,7 +11,7 @@
 	<body>
 		<!--Navigation-->
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-			<a class="navbar-brand" href="#">Navbar</a>
+			<a class="navbar-brand" href="#">RepeaterCharacter</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 			  <span class="navbar-toggler-icon"></span>
 			</button>
@@ -32,12 +32,31 @@
 		</header>
 
 
-		<div>
-			<div class="form-group">
-				<label for="txtAreaLbl">Example textarea</label>
-				<textarea class="form-control" id="txtAreaLbl" rows="20"></textarea>
+		<div class="container">
+
+			<div class="row">
+				<div class="col align-self-center">
+					<div class="form-group">
+						<label for="txtAreaLbl">Entrez votre texte ci-dessous</label>
+						<textarea class="form-control" id="txtAreaLbl" rows="20"></textarea>
+						<span id=charcount></span>
+					</div>
+				</div>
 			</div>
-			<input class="btn btn-primary" type="submit" value="Valider">
+			<div class="row">
+				<div class="col">
+					<form class="form-inline">
+						<div class="form-group">
+						  <label for="inputLength">How long ?</label>
+						  <input type="number" min="0" max="500" id="inputLength" class="form-control mx-sm-3" aria-describedby="lengthHelpInline">
+						  <small id="lengthHelpInline" class="text-muted">Attention à ne pas surcharger la mémoire.</small>
+						</div>
+					  </form>
+					<div class="align-items-center">
+						<input id="iptValider" class="btn btn-primary" type="submit" value="Repeat">
+					</div>
+				</div>
+			</div>
 
 		</div>
 
@@ -45,4 +64,5 @@
 
 		</footer>	
 	</body>
+	<script type="text/javascript" src="functions.js"></script>
 </html>
