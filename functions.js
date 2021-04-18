@@ -1,5 +1,6 @@
 console.log("test");
 console.log(document.getElementById('iptValider'));
+
 document.getElementById('iptValider').addEventListener('click', repeat);
 
 // Repeat the string or character
@@ -56,7 +57,7 @@ addListenerMulti(window, 'keyup keypress', countCharacter);
 
 function countCharacter()
 {
-		var lng = document.getElementsByTagName('textarea')[0].value.length;
+	var lng = document.getElementsByTagName('textarea')[0].value.length;
 	document.getElementById("charcount").innerHTML = lng + ' out of 400 characters';
 }
 
