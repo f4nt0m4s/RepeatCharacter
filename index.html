@@ -6,6 +6,7 @@
 		<meta name="description" content="" />
 		<meta name="author" content="" />
 		<link rel="stylesheet" type="text/css" href="./style/bootstrap/css/bootstrap.min.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="./style/style.css">
 		<title>Repeat Character</title>
 	</head>
 	<style>
@@ -26,38 +27,20 @@
 		}
 	</style>
 	<body>
-		<!--Navigation
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-			<a class="navbar-brand" href="#">RepeaterCharacter</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-			  <span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-			  <div class="navbar-nav">
-				<a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-				<a class="nav-item nav-link" href="#">Features</a>
-				<a class="nav-item nav-link" href="#">Pricing</a>
-				<a class="nav-item nav-link disabled" href="#">Disabled</a>
-			  </div>
-			</div>
-		</nav>
-		-->
 
-		<!--Navigation-->
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-center shadow-sm border-top border-bottom border-primary" style="border-width : 2px !important;">
-			<a class="navbar-brand" href="#">RepeaterCharacter</a>
-		</nav>
-
-		<!--Navigation
-		<header class="masthead bg-primary">
-			<div class="container d-flex align-items-center flex-column">
-				<h1></h1>
-			</div>
+		<header class="header bg-primary bg-dark justify-content-center shadow-sm border-top border-bottom border-primary" >
+			<h1 class="h1 display-1 text-center text-light m-5" >Repeater Text</h1>
+			<!-- Rounded toggle switch -->
+			<label class="switch">
+				<input type="checkbox">
+				<span class="slider round"></span>
+			</label>
 		</header>
-		-->
+
+		
 
 
-		<div class="container">
+		<div class="container bg-dark shadow-sm border border-primary">
 
 			
 			<div class="row">
@@ -66,8 +49,8 @@
 						<form>
 								<div class="form-group p-2">
 									
-									<div class="">
-										<label for="txtAreaLbl">Entrez votre texte ci-dessous</label>
+									<div class="col-12">
+										<label class="text-light" for="txtAreaLbl">Entrez votre texte ci-dessous</label>
 										<textarea id="txtAreaId" class="form-control" id="txtAreaLbl" rows="20" placeholder="Ecrivez votre texte..."></textarea>
 									</div>
 									
@@ -76,11 +59,11 @@
 									</div>
 									
 									<div class="m-2 align-items-center">
-										<label for="countId">Combien de répétition ?</label>
+										<label class="text-light" for="countId">Combien de répétition ?</label>
 										<input type="number" min="0" max="500" id="countId" class="form-control" aria-describedby="lengthHelpInline" placeholder="De 0 à 500 max.">
 									</div>
 									<div class="text-right">
-										<span id="lengthHelpInline" class="form-text text-muted">Attention à ne pas surcharger la mémoire.</span>
+										<span id="lengthHelpInline" class="form-text text-light">Attention à ne pas surcharger la mémoire.</span>
 									</div>
 
 									<div class="col mx-auto text-center">
@@ -111,4 +94,30 @@
 		</footer>	
 	</body>
 	<script type="text/javascript" src="functions.js"></script>
+
+	<!--
+			RESSOURCES
+		
+		Navigation
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<a class="navbar-brand" href="#">RepeaterCharacter</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			  <div class="navbar-nav">
+				<a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+				<a class="nav-item nav-link" href="#">Features</a>
+				<a class="nav-item nav-link" href="#">Pricing</a>
+				<a class="nav-item nav-link disabled" href="#">Disabled</a>
+			  </div>
+			</div>
+		</nav>
+
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-center shadow-sm border-top border-bottom border-primary" style="border-width : 2px !important;">
+			<h2 class="navbar-brand h1 display-1" >RepeaterCharacter</h2>
+		</nav>
+
+	-->
+
 </html>

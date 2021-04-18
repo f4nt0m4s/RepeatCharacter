@@ -51,8 +51,6 @@ function addListenerMulti(element, eventNames, listener) {
 	}
 	
 addListenerMulti(window, 'keyup keypress', countCharacter);
-
-
 //document.getElementsByTagName('textarea')[0].addEventListener('keyup', countCharacter);
 //document.getElementsByTagName('textarea')[0].addEventListener('keypress', countCharacter);
 
@@ -61,3 +59,8 @@ function countCharacter()
 		var lng = document.getElementsByTagName('textarea')[0].value.length;
 	document.getElementById("charcount").innerHTML = lng + ' out of 400 characters';
 }
+
+
+
+// Light/Dark Mode
+
