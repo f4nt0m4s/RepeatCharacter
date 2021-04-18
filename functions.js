@@ -8,7 +8,7 @@ function repeat()
 {
 		console.log('Bouton valider !');
 		// Récupération du texte
-		let txtArea = document.getElementById('txtAreaId');
+		/*let txtArea = document.getElementById('txtAreaId');
 		let areaValue = null;
 		// Récupération du compteur
 		let counter = document.getElementById('countId');
@@ -34,7 +34,7 @@ function repeat()
 		if ( retValue.length != 0 )
 		{
 			txtArea.value = retValue;
-		}
+		}*/
 }
 
 

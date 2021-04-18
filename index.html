@@ -7,6 +7,7 @@
 		<meta name="author" content="" />
 		<link rel="stylesheet" type="text/css" href="./style/bootstrap/css/bootstrap.min.css" media="screen">
 		<link rel="stylesheet" type="text/css" href="./style/style.css">
+		<script type="text/javascript" src="functions.js" defer></script> <!--defer : lorsque la page a terminé de chargé-->
 		<title>Repeat Character</title>
 	</head>
 	<style>
@@ -26,9 +27,9 @@
 			border-width:5px !important;
 		}
 	</style>
-	<body>
+	<body class="bg-dark">
 
-		<header class="header bg-primary bg-dark justify-content-center shadow-sm border-top border-bottom border-primary" >
+		<header class="header bg-dark justify-content-center shadow-sm border-top border-bottom border-primary" >
 			<h1 class="h1 display-1 text-center text-light m-5" >Repeater Text</h1>
 			<!-- Rounded toggle switch -->
 			<label class="switch">
@@ -51,7 +52,7 @@
 									
 									<div class="col-12">
 										<label class="text-light" for="txtAreaLbl">Entrez votre texte ci-dessous</label>
-										<textarea id="txtAreaId" class="form-control" id="txtAreaLbl" rows="20" placeholder="Ecrivez votre texte..."></textarea>
+										<textarea id="txtAreaId" class="form-control" id="txtAreaLbl" rows="15" placeholder="Ecrivez votre texte..."></textarea>
 									</div>
 									
 									<div class="text-right">
@@ -67,20 +68,13 @@
 									</div>
 
 									<div class="col mx-auto text-center">
-										<input id="iptNettoyer" class=" m-2 btn btn-primary" type="reset" value="Clean">
+										<button id="btnCopy" class="m-2 btn btn-primary" >Copy text</button>
+										<input id="iptNettoyer" class="m-2 btn btn-primary" type="reset" value="Clean">
 										<input id="iptValider" class="m-2 btn btn-primary" type="submit" value="Repeat">
 									</div>
 									
 								</div>
 						</form>
-
-						<h2>
-							Autre options :
-						</h2>
-						<div class="align-items-center">
-							<button id="iptCopier" type="submit" class="btn btn-primary">Copier</button>
-							<button id="iptColler" type="button" class="btn btn-primary">Coller</button>
-						</div>
 
 					</div>
 				
@@ -89,11 +83,12 @@
 
 		</div>
 
-		<footer>
-
+		<footer class="footer bg-dark justify-content-center shadow-sm border-top border-bottom border-primary">
+			<div class="container">
+				<h4 class="h4 display-4 text-center text-light" >Thanks to used it</h4>
+			</div>
 		</footer>	
 	</body>
-	<script type="text/javascript" src="functions.js"></script>
 
 	<!--
 			RESSOURCES
