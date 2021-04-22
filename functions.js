@@ -9,24 +9,25 @@ function repeat()
 		let counter = document.getElementById('countId');
 		let counterValue = null;
 		// Valeur à afficher
-		let retValue = "";
-
-		console.log("1-cpt :" + counter.value);
-
+		let retValue = ""; //( txtArea == null || txtArea == undefined ) ? "" : txtArea.value;
 		areaValue = ( txtArea == null || txtArea == undefined ) ? "" : txtArea.value;
 		counterValue = ( counter == null || counter == undefined || counter.value === "" ) ? 0 : counter.value;
 		
-		console.log("2-area :" + areaValue);
-		console.log("2-cpt :" + counterValue);
-		for(let i=0; i<counterValue; i++)
+		let lengthTextTyped = areaValue.length;
+		if ( lengthTextTyped == 0 )
 		{
-			retValue += areaValue;
-		}
+			for(let i=0; i<counterValue; i++)
+			{
+				retValue += areaValue;
+			}
 
-		if ( retValue.length != 0 )
-		{
-			console.log("yes : " + retValue)
-			document.getElementById('txtAreaId').value = retValue;
+			let lengthText = retValue.length;
+			console.log(lengthText);
+			if ( lengthText != 0 )
+			{
+				console.log("yes : " + retValue)
+				document.getElementById('txtAreaId').value = retValue;
+			}
 		}
 }
 
@@ -59,4 +60,3 @@ function countCharacter()
 // Call to functions
 document.getElementById('iptValider').addEventListener('click', repeat);
 //addListenerMulti(window, 'keyup keypress', countCharacter);
-
