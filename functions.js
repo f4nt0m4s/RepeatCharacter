@@ -1,3 +1,5 @@
+"use strict";
+
 // Repeat the string or character
 function repeat()
 {
@@ -14,7 +16,7 @@ function repeat()
 		counterValue = ( counter == null || counter == undefined || counter.value === "" ) ? 0 : counter.value;
 		
 		let lengthTextTyped = areaValue.length;
-		if ( lengthTextTyped == 0 )
+		if ( lengthTextTyped != 0 )
 		{
 			for(let i=0; i<counterValue; i++)
 			{
