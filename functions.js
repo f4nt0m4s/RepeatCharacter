@@ -48,17 +48,35 @@ function addListenerMulti(element, eventNames, listener) {
 	}
 }
 
+// Counter to count characters typed
 function countCharacter()
 {
 	var lng = document.getElementsByTagName('textarea')[0].value.length;
-	document.getElementById("charcount").innerHTML = lng + ' out of 400 characters';
+	let sCarac = "caractère";
+	sCarac += (lng>1) ? "s" : "";
+	document.getElementById("charcount").innerHTML = lng + " " + sCarac;
+}
+
+
+// Copy text
+function copyText()
+{
+	let copyText = document.getElementById("textarea");
+	  
+	/* Select the text field */
+	copyText.select();
+	copyText.setSelectionRange(0, 99999); /* For mobile devices */
+	  
+	/* Copy the text inside the text field */
+	document.execCommand("copy");
 }
 
 
 
-// Light/Dark Mode
+
 
 
 // Call to functions
 document.getElementById('iptValider').addEventListener('click', repeat);
-//addListenerMulti(window, 'keyup keypress', countCharacter);
+addListenerMulti(window, 'keyup keypress', countCharacter);
+document.getElementById('btnCopy').addEventListener('click', copyText);
